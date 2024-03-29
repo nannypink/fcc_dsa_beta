@@ -10,3 +10,14 @@ let cid = [
   ["TWENTY", 60],
   ["ONE HUNDRED", 100]
 ];
+let cash = document.getElementById("input");
+let changeDue = document.getElementById("change-due");
+const button = document.getElementById("purchase-btn");
+
+if (cash < price){
+  alert("Customer does not have enough money to purchase the item");
+}
+
+if (cash === price){
+  alert("No change due - customer paid with exact cash");
+}
